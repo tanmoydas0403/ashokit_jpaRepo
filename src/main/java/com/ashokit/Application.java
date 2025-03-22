@@ -50,7 +50,7 @@ public class Application {
 //		Employee emp8=new Employee(6,"Ranjith Das", 4500.00,"Male","Admin");
 //		Employee emp6=new Employee(7,"Suresh Das", 3500.00,"Male","Account");
 //		Employee emp7=new Employee(8,"Priya Das", 7500.00,"Fe-Male","Account");
-//
+
 //		repo.saveAll(Arrays.asList(emp1,emp2,emp3,emp4,emp5,emp6,emp7,emp8));
 
 //		Sort empNameAsc = Sort.by("empName").ascending();
