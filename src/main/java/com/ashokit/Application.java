@@ -1,6 +1,7 @@
 package com.ashokit;
 
 import com.ashokit.entity.Employee;
+//import com.ashokit.generators.OrderIdGenerator;
 import com.ashokit.repo.EmployeeRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -105,6 +106,14 @@ public class Application {
 
 //		System.out.println("--------------Delete Query----------------------");
 //		repo.deleteEmployee(11);
+
+//		OrderIdGenerator.setPrefix("EMP_");
+		Employee emp=new Employee();
+		emp.setEmpName("RajaRani");
+		emp.setDept("Admin");
+		emp.setEmpSalary(50000.00);
+		emp.setEmpGender("Fe-Male");
+		repo.save(emp);
 	}
 
 }
