@@ -23,34 +23,34 @@ public class Application {
 		ConfigurableApplicationContext ctxt = SpringApplication.run(Application.class, args);
 		EmployeeRepository repo = ctxt.getBean(EmployeeRepository.class);
 		System.out.println(repo.getClass().getName());
-//		Employee emp1=new Employee();
-//		emp1.setEmpId(1);
-//		emp1.setEmpName("Tanmoy Das");
-//		emp1.setEmpGender("Male");
-//		emp1.setEmpSalary(5000.00);
-//		emp1.setDept("Account");
-//
-//		Employee emp2=new Employee();
-//		emp2.setEmpId(2);
-//		emp2.setEmpName("Tarun Das");
-//		emp2.setEmpSalary(15000.00);
-//		emp2.setDept("Admin");
-//		emp1.setEmpGender("Male");
-//
-//		Employee emp3=new Employee();
-//		emp3.setEmpId(3);
-//		emp3.setEmpName("Mrinmoy Das");
-//		emp3.setEmpSalary(5500.00);
-//		emp3.setDept("Admin");
-//		emp1.setEmpGender("Male");
-//
-//		Employee emp4=new Employee(4,"Kajal Das", 2500.00,"Fe-Male","Manager");
-//		Employee emp5=new Employee(5,"Gita Das", 6500.00,"Fe-Male","Manager");
-//		Employee emp8=new Employee(6,"Ranjith Das", 4500.00,"Male","Admin");
-//		Employee emp6=new Employee(7,"Suresh Das", 3500.00,"Male","Account");
-//		Employee emp7=new Employee(8,"Priya Das", 7500.00,"Fe-Male","Account");
-//
-//		repo.saveAll(Arrays.asList(emp1,emp2,emp3,emp4,emp5,emp6,emp7,emp8));
+		Employee emp1=new Employee();
+		emp1.setEmpId(1);
+		emp1.setEmpName("Tanmoy Das");
+		emp1.setEmpGender("Male");
+		emp1.setEmpSalary(5000.00);
+		emp1.setDept("Account");
+
+		Employee emp2=new Employee();
+		emp2.setEmpId(2);
+		emp2.setEmpName("Tarun Das");
+		emp2.setEmpSalary(15000.00);
+		emp2.setDept("Admin");
+		emp1.setEmpGender("Male");
+
+		Employee emp3=new Employee();
+		emp3.setEmpId(3);
+		emp3.setEmpName("Mrinmoy Das");
+		emp3.setEmpSalary(5500.00);
+		emp3.setDept("Admin");
+		emp1.setEmpGender("Male");
+
+		Employee emp4=new Employee(4,"Kajal Das", 2500.00,"Fe-Male","Manager");
+		Employee emp5=new Employee(5,"Gita Das", 6500.00,"Fe-Male","Manager");
+		Employee emp8=new Employee(6,"Ranjith Das", 4500.00,"Male","Admin");
+		Employee emp6=new Employee(7,"Suresh Das", 3500.00,"Male","Account");
+		Employee emp7=new Employee(8,"Priya Das", 7500.00,"Fe-Male","Account");
+
+		repo.saveAll(Arrays.asList(emp1,emp2,emp3,emp4,emp5,emp6,emp7,emp8));
 
 //		Sort empNameAsc = Sort.by("empName").ascending();
 //		List<Employee> asc = repo.findAll(empNameAsc);
@@ -100,11 +100,11 @@ public class Application {
 
 //		repo.saveEmployee(new Employee(11,"Tanu Biswas",9000.00,"Male","Marketing"));
 //		System.out.println("-----Update Query-------")
-//		repo.updateEmployee(2,"Male");
-//		repo.updateEmployee(3,"Male");
+		repo.updateEmployee(2,"Male");
+		repo.updateEmployee(3,"Male");
 
 //		System.out.println("--------------Delete Query----------------------");
-//		repo.deleteEmployee(11);
+		repo.deleteEmployee(11);
 	}
 
 }
